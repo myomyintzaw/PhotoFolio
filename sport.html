@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+ 
+
+<link href="assets/img/favicon.png" rel="icon">
+<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+
+
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+<script type="text/javascript" src="slider/js/jquery-1-4-2.min.js"></script> 
+<!--script type="text/javascript" src="/jqueryui/js/jquery-ui-1.7.2.custom.min.js"></script--> 
+<script type="text/javascript" src="slider/js/jquery-ui.min.js"></script> 
+<script type="text/javascript" src="slider/js/showhide.js"></script> 
+<script type="text/JavaScript" src="slider/js/jquery.mousewheel.js"></script> 
+<link href="slider/styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="slider/js/jquery.min.js"></script>
+<script type="text/javascript" src="slider/js/ddsmoothmenu.js">
+
+
+
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+</script>
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "templatemo_menu", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script> 
+
+<!-- Load the CloudCarousel JavaScript file -->
+<script type="text/JavaScript" src="slider/js/cloud-carousel.1.0.5.js"></script>
+ 
+<script type="text/javascript">
+$(document).ready(function(){
+						   
+	// This initialises carousels on the container elements specified, in this case, carousel1.
+	$("#carousel1").CloudCarousel(		
+		{			
+			reflHeight: 40,
+			reflGap:2,
+			titleBox: $('#da-vinci-title'),
+			altBox: $('#da-vinci-alt'),
+			buttonLeft: $('#slider-left-but'),
+			buttonRight: $('#slider-right-but'),
+			yRadius:30,
+			xPos: 480,
+			yPos: 32,
+			speed:0.15,
+		}
+	);
+});
+ 
+</script>
+
+</head>
+<body>
+    <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid d-flex align-items-center justify-content-around ">
+
+        <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <i style="font-size:84px;" class="bi bi-camera"></i>
+          <h2>PhotoFolio</h2>
+        </a>
+  
+        <nav id="navbar" class="navbar justify-content-end">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <ul>
+                <li><a href="gallery.html">Nature</a></li>
+                <li><a href="gallery-single.html">People</a></li>
+                <li><a href="arch.html">Architecture</a></li>
+                <li><a href="animals.html">Animals</a></li>
+                <li><a href="sport.html">Sports</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li class="dropdown"><a href="#"><span>Sub Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                  <ul>
+                    <li><a href="submenu1.html">Sub Menu 1</a></li>
+                    <li><a href="submenu2.html">Sub Menu 2</a></li>
+                    <!-- <li><a href="#">Sub Menu 3</a></li> -->
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav><!-- .navbar -->
+  
+        <div class="header-social-links">
+            <a href="https://twitter.com/i/flow/signup" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="https://play.google.com/store/apps/details?id=com.facebook.katana&hl=en&gl=US&pli=1" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+          </div>
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+  
+      </div>
+    </header> <!--End Header--><br><br><br><br>
+
+
+     <div id="templatemo_menu" class="ddsmoothmenu mt-5">
+        <ul>
+      <!-- <a href="http://www.keepsailingweb.com" target="_blank">Keep Sailing Web Development</a></h1> -->
+        </ul>
+        <br style="clear: left" />
+    </div> <!-- end of templatemo_menu -->
+	<!-- <table width="100%"><tr><td align="center"> -->
+ 
+    <!-- <div id = "carousel1" style="width:100%; height:250px;background:none;overflow:scroll; margin-top: 20px">           -->
+        <!-- All images with class of "cloudcarousel" will be turned into carousel items -->
+        <!-- You can place links around these images -->
+        <div class="container">
+          <div class="row  ">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 justify-content-around">
+        <div  id="carousel1" style="width:100%; height:250px;background:none;overflow:scroll; margin-top: 20px;" >
+
+        <a href="https://sportslinkstore.com/" rel="lightbox"><img class="cloudcarousel w-25" src="assets/img/sport/23-New-Mountain-Foldable-Sports-Bike-Urban-From-China.webp" alt="CSS Templates 1" title="Website Templates 1" /></a>
+        <a href="https://sportslinkstore.com/" rel="lightbox"><img class="cloudcarousel w-25 h-75" src="assets/img/sport/2SNAP_00101786-102.jpg" alt="CSS Templates 2" title="Website Templates 2" /></a>
+        <a href="https://sportslinkstore.com/" rel="lightbox"><img class="cloudcarousel w-25 h-100" src="assets/img/sport/photo-1516352267226-f5f3e4c53781.avif" alt="CSS Templates 3" title="Website Templates 3" /></a>
+        <a href="https://sportslinkstore.com/" rel="lightbox"><img class="cloudcarousel w-25 h-100" src="assets/img/sport/istockphoto-1208651218-612x612 (1).jpg" alt="CSS Templates 4" title="Website Templates 4" /></a>
+        <a href="https://sportslinkstore.com/" rel="lightbox"><img class="cloudcarousel w-25 h-100" src="assets/img/sport/photo-1642367943176-d1b7d3ce4100.avif" alt="Flash Templates 1" title="Flash Templates 1" /></a>
+        <a href="https://sportslinkstore.com/" rel="lightbox"><img class="cloudcarousel w-25 h-100" src="assets/img/sport/cycle.jpg" alt="Flash Templates 2" title="Flash Templates 2" /></a>
+        <a href="https://sportslinkstore.com/" rel="lightbox"><img class="cloudcarousel w-25 h-100" src="assets/img/sport/istockphoto-1043765996-612x612.jpg" alt="Flash Templates 3" title="Flash Templates 3" /></a>
+        <a href="https://sportslinkstore.com/" rel="lightbox"><img class="cloudcarousel w-25 h-100" src="assets/img/sport/istockphoto-520022321-612x612.jpg" alt="Flash Templates 4" title="Flash Templates 4" /></a>
+    </div>  
+  <!-- </td></tr> <tr><td align="center"> -->
+    <!-- Define left and right buttons. -->
+    <input id="slider-left-but" type="button" value="" class="mt-3 offset-5" />
+    <input id="slider-right-but" type="button" value="" /> 
+	<!-- </td></tr></table> -->
+    <!-- <hr> -->
+  </div>
+</div>
+</div>
+
+
+    
+    <main id="main" data-aos="fade" data-aos-delay="1500">
+
+        <!-- ======= End Page Header ======= -->
+        <div class="page-header d-flex align-items-center">
+          <div class="container position-relative">
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-6 text-center">
+                <h2>Nature (16 images)</h2>
+                <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+    
+                <a class="cta-btn" href="contact.html">Available for hire</a>
+    
+              </div>
+            </div>
+          </div>
+        </div><!-- End Page Header -->
+    
+        <!-- ======= Gallery Section ======= -->
+        <section id="gallery" class="gallery">
+          <div class="container-fluid">
+    
+            <div class="row gy-4 justify-content-center">
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="gallery-item h-100">
+                  <img src="assets/img/gallery/gallery-1.jpg" class="img-fluid " alt="">
+                  <div class="gallery-links d-flex align-items-center justify-content-center">
+                    <a href="assets/img/gallery/gallery-1.jpg" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Gallery Item -->
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="gallery-item h-100">
+                  <img src="assets/img/sport/istockphoto-1499916155-612x612.jpg" class="img-fluid w-100 h-100" alt="">
+                  <div class="gallery-links d-flex align-items-center justify-content-center">
+                    <a href="assets/img/sport/istockphoto-1499916155-612x612.jpg" title="Gallery 2" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Gallery Item -->
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="gallery-item h-100">
+                  <img src="assets/img/sport/istockphoto-600689900-612x612.jpg" class="img-fluid h-100" alt="">
+                  <div class="gallery-links d-flex align-items-center justify-content-center">
+                    <a href="assets/img/sport/istockphoto-600689900-612x612.jpg" title="Gallery 3" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Gallery Item -->
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="gallery-item h-100">
+                  <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt="">
+                  <div class="gallery-links d-flex align-items-center justify-content-center">
+                    <a href="assets/img/gallery/gallery-4.jpg" title="Gallery 4" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Gallery Item -->
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="gallery-item h-100">
+                  <img src="assets/img/sport/istockphoto-488875303-1024x1024.jpg" class="img-fluid h-100" alt="">
+                  <div class="gallery-links d-flex align-items-center justify-content-center">
+                    <a href="assets/img/sport/istockphoto-488875303-1024x1024.jpg" title="Gallery 5" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Gallery Item -->
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="gallery-item h-100">
+                  <img src="assets/img/sport/istockphoto-1138555309-612x612.jpg" class="img-fluid h-100" alt="">
+                  <div class="gallery-links d-flex align-items-center justify-content-center">
+                    <a href="assets/img/sport/istockphoto-1138555309-612x612.jpg" title="Gallery 6" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Gallery Item -->
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="gallery-item h-100">
+                  <img src="assets/img/sport/crossfit-woman-flipping-huge-tire-gym-fit-female-athlete-working-out-turning-exercising-big-41835296.webp" class="img-fluid h-100" alt="">
+                  <div class="gallery-links d-flex align-items-center justify-content-center">
+                    <a href="assets/img/sport/crossfit-woman-flipping-huge-tire-gym-fit-female-athlete-working-out-turning-exercising-big-41835296.webp" title="Gallery 7" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Gallery Item -->
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="gallery-item h-100">
+                  <img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt="">
+                  <div class="gallery-links d-flex align-items-center justify-content-center">
+                    <a href="assets/img/gallery/gallery-8.jpg" title="Gallery 8" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Gallery Item -->
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="gallery-item h-100">
+                  <img src="assets/img/gallery/gallery-9.jpg" class="img-fluid" alt="">
+                  <div class="gallery-links d-flex align-items-center justify-content-center">
+                    <a href="assets/img/gallery/gallery-9.jpg" title="Gallery 9" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Gallery Item -->
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="gallery-item h-100">
+                  <img src="assets/img/gallery/gallery-10.jpg" class="img-fluid" alt="">
+                  <div class="gallery-links d-flex align-items-center justify-content-center">
+                    <a href="assets/img/gallery/gallery-10.jpg" title="Gallery 10" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Gallery Item -->
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="gallery-item h-100">
+                  <img src="assets/img/sport/istockphoto-1454026666-612x612.jpg" class="img-fluid h-100" alt="">
+                  <div class="gallery-links d-flex align-items-center justify-content-center">
+                    <a href="assets/img/sport/istockphoto-1454026666-612x612.jpg" title="Gallery 11" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Gallery Item -->
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="gallery-item h-100">
+                  <img src="assets/img/sport/istockphoto-1145832906-612x612.jpg" class="img-fluid h-100" alt="">
+                  <div class="gallery-links d-flex align-items-center justify-content-center">
+                    <a href="assets/img/sport/istockphoto-1145832906-612x612.jpg" title="Gallery 12" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Gallery Item -->
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="gallery-item h-100">
+                  <img src="assets/img/gallery/gallery-13.jpg" class="img-fluid" alt="">
+                  <div class="gallery-links d-flex align-items-center justify-content-center">
+                    <a href="assets/img/gallery/gallery-13.jpg" title="Gallery 13" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Gallery Item -->
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="gallery-item h-100">
+                  <img src="assets/img/gallery/gallery-14.jpg" class="img-fluid" alt="">
+                  <div class="gallery-links d-flex align-items-center justify-content-center">
+                    <a href="assets/img/gallery/gallery-14.jpg" title="Gallery 14" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Gallery Item -->
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="gallery-item h-100">
+                  <img src="assets/img/gallery/gallery-15.jpg" class="img-fluid" alt="">
+                  <div class="gallery-links d-flex align-items-center justify-content-center">
+                    <a href="assets/img/gallery/gallery-15.jpg" title="Gallery 15" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Gallery Item -->
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="gallery-item h-100">
+                  <img src="assets/img/gallery/gallery-16.jpg" class="img-fluid" alt="">
+                  <div class="gallery-links d-flex align-items-center justify-content-center">
+                    <a href="assets/img/gallery/gallery-16.jpg" title="Gallery 16" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Gallery Item -->
+    
+            </div>
+    
+          </div>
+        </section><!-- End Gallery Section -->
+    
+      </main><!-- End #main -->
+
+      
+ <!-- ======= Footer ======= -->
+ <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>PhotoFolio</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/ -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        Designed by <a href="">Author</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader">
+    <div class="line"></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+
+
+</body>
+</html>

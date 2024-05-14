@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>PhotoFolio Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: PhotoFolio
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+<style>
+  /* @import("https://fonts.googleapis.com/css?family=Lato|Montserrat:700&display=swap"); */
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-transform: uppercase;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: block;
+  background-color: #eee;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: #111;
+  height: 3.75rem;
+  width: 13.5rem;
+  font: bold 1rem Montserrat;
+  color: #eee;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+@media (max-width: 600px) {
+  button {
+    height: 50px;
+    width: 186px;
+    font-size: 0.8rem;
+  }
+}
+
+h1 {
+  font: bold 2rem Montserrat;
+  margin-bottom: 20px;
+  color: #111;
+  letter-spacing: 2px;
+}
+
+h1.main-heading {
+  font-size: 2.5rem;
+  color: #eee;
+}
+
+h1.dash {
+  margin-bottom: 0;
+}
+
+h1.dash::after {
+  height: 4px;
+  width: 90px;
+  content: '';
+  display: block;
+  margin: 1.25rem auto 3.125rem auto;
+  background-color: #111;
+  border-radius: 50px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  h1.dash::after {
+    width: 60px;
+    margin: 1.2rem auto 2rem auto;
+  }
+}
+
+p {
+  font: 400 1.25rem Lato;
+  line-height: 1.6;
+}
+
+p:not(:first-child) {
+  margin-bottom: 50px;
+}
+
+p.lower {
+  text-transform: none;
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+/* nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+nav .menu {
+  display: none;
+} */
+
+/* nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  font: 400 16px lato;
+  margin-left: auto;
+} */
+
+/* nav ul li {
+  margin: 0 20px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #111;
+} */
+
+/* nav ul li:last-child {
+  margin: 0 0 0 25px;
+}
+
+nav ul li:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+nav ul li:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+} */
+/* 
+@media (max-width: 900px) {
+  nav .logo {
+    width: 100%;
+    height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .logo img {
+    -webkit-transform: scale(0.65);
+            transform: scale(0.65);
+  }
+  nav .menu {
+    display: block;
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #eee;
+    width: 100%;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transition: -webkit-transform 0.3s ease 0.2s;
+    transition: -webkit-transform 0.3s ease 0.2s;
+    transition: transform 0.3s ease 0.2s;
+    transition: transform 0.3s ease 0.2s, -webkit-transform 0.3s ease 0.2s;
+  }
+  nav ul li {
+    opacity: 0;
+    padding: 10px 0;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+  }
+  nav ul li a {
+    color: #111;
+  }
+  nav ul li:last-child {
+    margin: 0;
+  }
+  nav ul.open {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  }
+  nav ul.open li {
+    -webkit-transition: opacity .2s ease-in 0.3s;
+    transition: opacity .2s ease-in 0.3s;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  nav {
+    height: 70px;
+  }
+} */
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+}
+
+.container img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 455px;
+          flex: 0 0 455px;
+  width: 455px;
+}
+
+.container .content {
+  padding: 0 50px;
+  margin: 30px 0;
+}
+
+@media (max-width: 1150px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 95%;
+  }
+  .container .content {
+    padding: 0 30px;
+  }
+  .container:not(:first-child) {
+    border-radius: 10px;
+  }
+  .container img {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .brands .images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .brands img {
+    -webkit-transform: scale(0.55);
+            transform: scale(0.55);
+  }
+  .container img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .container .intro {
+    margin-top: 30px;
+    border-radius: 50%;
+  }
+}
+
+.wide-wrapper {
+  width: 100%;
+  background: url("https://vikram-hegde.github.io/photographers-page/images/wide-pc.png") no-repeat 50% 50%/cover;
+  height: 490px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 916px;
+  background-color: rgba(1, 1, 1, 0.65);
+}
+
+.wrapper .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  letter-spacing: 2px;
+}
+
+.wrapper img {
+  height: auto;
+  width: 332px;
+}
+
+@media (max-width: 1150px) {
+  .wrapper {
+    height: 100%;
+    background-color: rgba(1, 1, 1, 0.35);
+  }
+  .wrapper img {
+    display: none;
+  }
+  .wrapper .heading .main-heading {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper .heading .main-heading {
+    font-size: 2rem;
+  }
+}
+
+.about {
+  background-color: #111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #111;
+  min-height: 85vh;
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding: 5px;
+    min-height: auto;
+  }
+  .about .container {
+    width: 100%;
+  }
+}
+
+.brands, .services {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.brands p, .services p {
+  margin-bottom: 100px;
+}
+
+.brands .images, .services .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+  .brands, .services {
+    padding: 30px 0;
+  }
+  .brands p, .services p {
+    margin-bottom: 35px;
+  }
+}
+
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.container:not(:first-child) p.lower {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+  .container:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+footer {
+  background-color: #111;
+  color: #eee;
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer h1 {
+  color: #eee;
+}
+
+footer .content ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .content ul li {
+  margin-right: 20px;
+}
+
+footer .content ul li img {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+footer .author img {
+  mix-blend-mode: soft-light;
+}
+
+@media (max-width: 600px) {
+  footer {
+    padding: 30px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .content {
+    margin-bottom: 20px;
+  }
+  footer .content ul li img {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+}
+
+.loader {
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  z-index: 100;
+  background-color: #111;
+  color: white;
+  position: fixed;
+  font: bold 1.2rem Montserrat;
+  letter-spacing: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.loader .loading {
+  position: absolute;
+  bottom: 10px;
+  font: 400 1rem Lato;
+}
+
+</style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <i class="bi bi-camera"></i>
+        <h1>PhotoFolio</h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="gallery.html">Nature</a></li>
+              <li><a href="gallery-single.html">People</a></li>
+              <li><a href="arch.html">Architecture</a></li>
+              <li><a href="animals.html">Animals</a></li>
+              <li><a href="sport.html">Sports</a></li>
+              <li><a href="travel.html">Travel</a></li>
+              <li class="dropdown"><a href="#"><span>Sub Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="submenu1.html">Sub Menu 1</a></li>
+                  <li><a href="submenu2.html">Sub Menu 2</a></li>
+                  <!-- <li><a href="#">Sub Menu 3</a></li> -->
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links">
+        <a href="https://twitter.com/i/flow/signup" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://play.google.com/store/apps/details?id=com.facebook.katana&hl=en&gl=US&pli=1" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header --> <br><br><br><br><br><br>
+
+  <!-- ======= Hero Section ======= -->
+ 
+ <div class="loader">
+        <div class="head">Photographer | UI Design</div>
+        <div class="loading">loading</div>
+    </div> 
+   
+    <div class="wide-wrapper" id="home">
+        <div class="wrapper">
+            <div class="heading">
+                <h1 class="main-heading">A creative photographer and blogger</h1>
+            </div>
+            <div> <img src="https://vikram-hegde.github.io/photographers-page/images/camerafront-pc.png" alt="intro"> </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="container">
+            <img src="https://vikram-hegde.github.io/photographers-page/images/intro-pc.png" alt="intro" class="intro">
+            <div class="content">
+                <h1>Hi! I am Jacob Owens</h1>
+                <p class="lower" style="color: #111;">Jacob Owen is an internationally acclaimed, award-
+                    winning photographer who is known world-wide as
+                    not only one of the top, technically excellent
+                    photographers of his generation, but his charming
+                    demeanor, confidence and humor make him a
+                    sought-after choice from CEO’s to celebrities to
+                    commercial and magazine clients alike.</p>
+            </div>
+        </div>
+    </div>
+    <div class="brands">
+        <h1>Brands I've worked with</h1>
+        <p class="bg-info">Clients</p>
+        <div class="images">
+
+            <img src="https://vikram-hegde.github.io/photographers-page/images/Icon awesome-snapchat.svg" alt="">
+            <img src="https://vikram-hegde.github.io/photographers-page/images/Icon awesome-500px.svg" alt="">
+            <img src="https://vikram-hegde.github.io/photographers-page/images/Icon simple-unsplash.svg" alt="">
+        </div>
+    </div>
+    <div class="services" id="services">
+        <h1>Services</h1>
+        <p style="color: aqua;">How can i help</p>
+
+        <div class="container">
+            <div class="content">
+                <h1 class="dash">Portraits and People</h1>
+                <p class="lower" style="color:#111;">Portrait photography is about capturing the essence, personality, identity and attitude
+                    of a person utilizing backgrounds, lighting and posing.</p>
+                <button>View Album</button>
+            </div>
+            <img src="https://vikram-hegde.github.io/photographers-page/images/portrait-pc.png" alt="a woman posing for a portrait">
+        </div>
+        <div class="container">
+            <img src="https://vikram-hegde.github.io/photographers-page/images/oudoor-pc.png" alt="aeroplane in a forest">
+            <div class="content">
+                <h1 class="dash">Outdoors and Nature</h1>
+                <p class="lower" style="color: grey;">To walk in nature is to witness a thousand miracles in itself, while capturing the
+                    perfect moment in lens is unexplainable.</p>
+                <button>View Album</button>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="content">
+                <h1 class="dash">Buy my photo art</h1>
+                <p class="lower" style="color:#111;">If you like my artwork consider buying it for your cool projects. </p>
+                <button>Purchase</button>
+            </div>
+            <img src="https://vikram-hegde.github.io/photographers-page/images/photoart-pc.png" alt="man on a boat">
+        </div>
+    </div>
+    <footer id="contact">
+        <div class="content">
+            <h1>Social</h1>
+            <ul>
+                <li><img src="https://vikram-hegde.github.io/photographers-page/images/Icon awesome-instagram.svg"></li>
+                <li><img src="https://vikram-hegde.github.io/photographers-page/images/Icon awesome-twitter.svg"></li>
+                <li><img src="https://vikram-hegde.github.io/photographers-page/images/Icon awesome-behance.svg"></li>
+            </ul>
+        </div>
+        <div class="author">
+            <img src="https://vikram-hegde.github.io/photographers-page/images/Jacob Owens.svg">
+        </div>
+    </footer>
+ 
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+<script>
+window.onload = () => {
+  document.querySelector('.loader').style.opacity = 0;
+  const menu = document.querySelector('.menu');
+
+  menu.addEventListener('click', () =>
+    document.querySelector('ul').classList.toggle('open')
+  );
+};
+</script>
+
+</body>
+
+</html>
